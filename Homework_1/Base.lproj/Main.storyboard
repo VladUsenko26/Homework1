@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qLU-lt-inm">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed-->
+        <scene sceneID="Sdb-UA-hHm">
+            <objects>
+                <navigationController id="MF1-6U-hUF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" id="CUP-rd-bb2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6nf-ga-TJC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mxe-k1-tPv" kind="relationship" relationship="rootViewController" id="OrZ-Xr-Qx2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1g9-Va-GUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="-924"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kEU-bB-phc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NW9-o5-UGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="mxe-k1-tPv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ZT-aU-DdH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h39-3y-gXi" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
+                                <rect key="frame" x="178.5" y="433" width="57" height="30"/>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9960948825" green="0.33995521070000001" blue="0.13318464159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="h39-3y-gXi" firstAttribute="centerX" secondItem="2ZT-aU-DdH" secondAttribute="centerX" id="8a3-Eh-wGe"/>
+                            <constraint firstItem="h39-3y-gXi" firstAttribute="centerY" secondItem="2ZT-aU-DdH" secondAttribute="centerY" id="Fs1-vS-cF6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QaM-cC-VEg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="ssG-Dx-mov"/>
+                    <navigationItem key="navigationItem" id="RIV-Bh-b2W"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-924"/>
+        </scene>
+        <!--SecondStory-->
+        <scene sceneID="LYp-DI-JsC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondStory" id="kv6-sf-hag" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3MK-9S-Ph0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e5i-C2-3Li">
+            <objects>
+                <navigationController id="UrV-a8-XG4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KJJ-e9-10a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ztR-ah-Zin" kind="relationship" relationship="rootViewController" id="MN4-u6-OAX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myL-yU-bdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="463"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zjp-wd-ffx">
+            <objects>
+                <viewController id="ztR-ah-Zin" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rke-Xh-lPl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj6-BH-n2I" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
+                                <rect key="frame" x="121.5" y="433" width="171" height="30"/>
+                                <state key="normal" title="Go to second storyboard">
+                                    <color key="titleColor" red="0.0919026418177884" green="0.069656332537842203" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kv6-sf-hag" kind="show" id="J5L-GL-GhR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kj6-BH-n2I" firstAttribute="centerY" secondItem="rke-Xh-lPl" secondAttribute="centerY" id="DWo-iO-YUV"/>
+                            <constraint firstItem="kj6-BH-n2I" firstAttribute="centerX" secondItem="rke-Xh-lPl" secondAttribute="centerX" id="s7L-c3-P2V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qOg-MS-WOo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qyo-a1-J9x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwg-jC-v6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="463"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="ziF-qY-0Gd">
+            <objects>
+                <navigationController id="sML-km-W5k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="4b8-be-o8c"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Pq-J7-EEH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WTb-wJ-zGT" kind="relationship" relationship="rootViewController" id="O8k-oz-Q4b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpG-B0-WnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="463"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A4f-1A-Xrg">
+            <objects>
+                <viewController id="WTb-wJ-zGT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ez2-5b-yf4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuo-jA-Kpl" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonTitleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14242783923414171" green="1" blue="0.23789022218235689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kuo-jA-Kpl" firstAttribute="centerX" secondItem="ez2-5b-yf4" secondAttribute="centerX" id="LQP-Ql-8Xu"/>
+                            <constraint firstItem="kuo-jA-Kpl" firstAttribute="centerY" secondItem="ez2-5b-yf4" secondAttribute="centerY" id="x3o-50-Geg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3dj-W2-qFg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CSR-DG-3Ac"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GF2-Se-55S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="463"/>
+        </scene>
+        <!--Benchmark-->
+        <scene sceneID="gVn-kJ-UWE">
+            <objects>
+                <navigationController id="JME-C2-ttU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Benchmark" id="J1A-AX-7QZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eq3-q9-mrW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qPR-Xc-MYH" kind="relationship" relationship="rootViewController" id="Hsl-RL-a0G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwO-Vv-Kdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="-263"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="INt-8t-gQu">
+            <objects>
+                <viewController id="qPR-Xc-MYH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wwn-4l-Rbs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkJ-79-bWS" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NkJ-79-bWS" firstAttribute="centerX" secondItem="wwn-4l-Rbs" secondAttribute="centerX" id="bvc-ob-HzJ"/>
+                            <constraint firstItem="NkJ-79-bWS" firstAttribute="centerY" secondItem="wwn-4l-Rbs" secondAttribute="centerY" id="h52-ii-hsC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OiP-vi-xwa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ofQ-jN-SPb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAi-aU-C70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-263"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KLL-KA-mQu">
+            <objects>
+                <tabBarController id="rDp-M4-EY0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vlF-IW-Rmc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MF1-6U-hUF" kind="relationship" relationship="viewControllers" id="yaK-e8-yPh"/>
+                        <segue destination="JME-C2-ttU" kind="relationship" relationship="viewControllers" id="Kca-lM-99e"/>
+                        <segue destination="sML-km-W5k" kind="relationship" relationship="viewControllers" id="46k-qx-4Jq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCh-8k-Mnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="-262"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="CBe-Ed-duc">
+            <objects>
+                <splitViewController id="qLU-lt-inm" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="rDp-M4-EY0" kind="relationship" relationship="masterViewController" id="caz-iw-cex"/>
+                        <segue destination="UrV-a8-XG4" kind="relationship" relationship="detailViewController" id="6fy-aj-jsc"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eo-Eh-YLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="-263"/>
+        </scene>
+    </scenes>
+</document>
