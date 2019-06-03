@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56BF8D122A50E0900ABD7B0 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56BF8D022A50E0900ABD7B0 /* CustomView.xib */; };
+		F56BF8D322A510C400ABD7B0 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BF8D222A510C300ABD7B0 /* CustomView.swift */; };
 		F5DD8845229EB72900C2B892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD8844229EB72900C2B892 /* AppDelegate.swift */; };
 		F5DD8847229EB72900C2B892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD8846229EB72900C2B892 /* ViewController.swift */; };
 		F5DD884A229EB72900C2B892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DD8848229EB72900C2B892 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F56BF8D022A50E0900ABD7B0 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		F56BF8D222A510C300ABD7B0 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		F5DD8841229EB72900C2B892 /* Homework_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DD8844229EB72900C2B892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5DD8846229EB72900C2B892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				F5DD8850229EB72E00C2B892 /* Info.plist */,
 				F5DD8859229EFFAE00C2B892 /* SecondStory.storyboard */,
 				F5DD885D229F008800C2B892 /* CustomButton.swift */,
+				F56BF8D022A50E0900ABD7B0 /* CustomView.xib */,
+				F56BF8D222A510C300ABD7B0 /* CustomView.swift */,
 			);
 			path = Homework_1;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DD884F229EB72E00C2B892 /* LaunchScreen.storyboard in Resources */,
+				F56BF8D122A50E0900ABD7B0 /* CustomView.xib in Resources */,
 				F5DD884C229EB72D00C2B892 /* Assets.xcassets in Resources */,
 				F5DD885A229EFFAE00C2B892 /* SecondStory.storyboard in Resources */,
 				F5DD884A229EB72900C2B892 /* Main.storyboard in Resources */,
@@ -143,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DD8847229EB72900C2B892 /* ViewController.swift in Sources */,
+				F56BF8D322A510C400ABD7B0 /* CustomView.swift in Sources */,
 				F5DD8845229EB72900C2B892 /* AppDelegate.swift in Sources */,
 				F5DD885E229F008800C2B892 /* CustomButton.swift in Sources */,
 			);

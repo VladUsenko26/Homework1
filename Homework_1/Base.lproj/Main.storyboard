@@ -30,7 +30,6 @@
         <!--View Controller-->
         <scene sceneID="kEU-bB-phc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NW9-o5-UGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="mxe-k1-tPv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ZT-aU-DdH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -58,6 +57,7 @@
                     <tabBarItem key="tabBarItem" title="" id="ssG-Dx-mov"/>
                     <navigationItem key="navigationItem" id="RIV-Bh-b2W"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NW9-o5-UGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2538" y="-924"/>
         </scene>
