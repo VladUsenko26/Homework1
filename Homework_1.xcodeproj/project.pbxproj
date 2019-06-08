@@ -87,18 +87,11 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		F58D65C522ABC43E00552C78 /* Storyboards */ = {
+		F58D65C622ABC45400552C78 /* System */ = {
 			isa = PBXGroup;
 			children = (
 				F5DD8848229EB72900C2B892 /* Main.storyboard */,
 				F5DD884D229EB72E00C2B892 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		F58D65C622ABC45400552C78 /* System */ = {
-			isa = PBXGroup;
-			children = (
 				F5DD8844229EB72900C2B892 /* AppDelegate.swift */,
 				F5DD884B229EB72D00C2B892 /* Assets.xcassets */,
 				F5DD8850229EB72E00C2B892 /* Info.plist */,
@@ -162,7 +155,6 @@
 			children = (
 				F58D65BE22ABC38500552C78 /* Extensions */,
 				F58D65C422ABC43000552C78 /* ViewControllers */,
-				F58D65C522ABC43E00552C78 /* Storyboards */,
 				F58D65BF22ABC3A000552C78 /* CustomViews */,
 				F58D65C622ABC45400552C78 /* System */,
 			);
