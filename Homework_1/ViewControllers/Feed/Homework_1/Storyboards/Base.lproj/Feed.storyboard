@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MF1-6U-hUF">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed-->
+        <scene sceneID="Sdb-UA-hHm">
+            <objects>
+                <navigationController id="MF1-6U-hUF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" id="CUP-rd-bb2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6nf-ga-TJC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="73v-FC-s4w" kind="relationship" relationship="rootViewController" id="aSS-nt-pkc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1g9-Va-GUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="-924"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rga-Iy-V5o">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-mxe-k1-tPv" id="73v-FC-s4w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JqS-yS-qfN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVZ-1i-fnC" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
+                                <rect key="frame" x="178.5" y="433" width="57" height="30"/>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9960948825" green="0.33995521070000001" blue="0.13318464159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="iVZ-1i-fnC" firstAttribute="centerY" secondItem="JqS-yS-qfN" secondAttribute="centerY" id="6qG-Hm-eXb"/>
+                            <constraint firstItem="iVZ-1i-fnC" firstAttribute="centerX" secondItem="JqS-yS-qfN" secondAttribute="centerX" id="v0Y-rs-4df"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pmw-BL-wB1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="A6H-fR-Frm"/>
+                    <navigationItem key="navigationItem" id="zzw-s6-c9t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spP-L0-gXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-924"/>
+        </scene>
+    </scenes>
+</document>

@@ -121,109 +121,6 @@
             </objects>
             <point key="canvasLocation" x="699" y="463"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="ziF-qY-0Gd">
-            <objects>
-                <navigationController id="sML-km-W5k" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="4b8-be-o8c"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Pq-J7-EEH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="WTb-wJ-zGT" kind="relationship" relationship="rootViewController" id="O8k-oz-Q4b"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MpG-B0-WnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1616" y="463"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="A4f-1A-Xrg">
-            <objects>
-                <viewController id="WTb-wJ-zGT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ez2-5b-yf4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuo-jA-Kpl" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonTitleColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.14242783923414171" green="1" blue="0.23789022218235689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="kuo-jA-Kpl" firstAttribute="centerX" secondItem="ez2-5b-yf4" secondAttribute="centerX" id="LQP-Ql-8Xu"/>
-                            <constraint firstItem="kuo-jA-Kpl" firstAttribute="centerY" secondItem="ez2-5b-yf4" secondAttribute="centerY" id="x3o-50-Geg"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="3dj-W2-qFg"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="CSR-DG-3Ac"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GF2-Se-55S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2538" y="463"/>
-        </scene>
-        <!--Benchmark-->
-        <scene sceneID="gVn-kJ-UWE">
-            <objects>
-                <navigationController id="JME-C2-ttU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Benchmark" id="J1A-AX-7QZ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eq3-q9-mrW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="qPR-Xc-MYH" kind="relationship" relationship="rootViewController" id="Hsl-RL-a0G"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bwO-Vv-Kdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1616" y="-263"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="INt-8t-gQu">
-            <objects>
-                <viewController id="qPR-Xc-MYH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wwn-4l-Rbs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkJ-79-bWS" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NkJ-79-bWS" firstAttribute="centerX" secondItem="wwn-4l-Rbs" secondAttribute="centerX" id="bvc-ob-HzJ"/>
-                            <constraint firstItem="NkJ-79-bWS" firstAttribute="centerY" secondItem="wwn-4l-Rbs" secondAttribute="centerY" id="h52-ii-hsC"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="OiP-vi-xwa"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ofQ-jN-SPb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vAi-aU-C70" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2538" y="-263"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KLL-KA-mQu">
             <objects>
@@ -235,8 +132,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="MF1-6U-hUF" kind="relationship" relationship="viewControllers" id="yaK-e8-yPh"/>
-                        <segue destination="JME-C2-ttU" kind="relationship" relationship="viewControllers" id="Kca-lM-99e"/>
-                        <segue destination="sML-km-W5k" kind="relationship" relationship="viewControllers" id="46k-qx-4Jq"/>
+                        <segue destination="teI-4d-Y1r" kind="relationship" relationship="viewControllers" id="Kca-lM-99e"/>
+                        <segue destination="8xC-8D-eLx" kind="relationship" relationship="viewControllers" id="46k-qx-4Jq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCh-8k-Mnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,6 +152,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eo-Eh-YLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-217" y="-263"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="kQr-Gd-vSH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="8xC-8D-eLx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5ZU-Xt-v7d"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLu-iS-Oub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="-152"/>
+        </scene>
+        <!--Benchmark-->
+        <scene sceneID="ZUi-Mq-zDU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Benchmark" id="teI-4d-Y1r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Fcq-H2-Cnh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OV6-UN-Iv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="-394"/>
         </scene>
     </scenes>
 </document>

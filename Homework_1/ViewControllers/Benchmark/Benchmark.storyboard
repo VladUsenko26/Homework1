@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JME-C2-ttU">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Benchmark-->
+        <scene sceneID="gVn-kJ-UWE">
+            <objects>
+                <navigationController id="JME-C2-ttU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Benchmark" id="J1A-AX-7QZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eq3-q9-mrW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hy0-PI-Xje" kind="relationship" relationship="rootViewController" id="JBo-n1-c0R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwO-Vv-Kdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="-263"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="huF-5W-zcH">
+            <objects>
+                <viewController id="Hy0-PI-Xje" customClass="ProfileViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DKz-rg-hpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9o-nJ-0XM" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e9o-nJ-0XM" firstAttribute="centerY" secondItem="DKz-rg-hpZ" secondAttribute="centerY" id="dL5-vU-hgz"/>
+                            <constraint firstItem="e9o-nJ-0XM" firstAttribute="centerX" secondItem="DKz-rg-hpZ" secondAttribute="centerX" id="n1B-jX-ml7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eto-83-1qV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R4r-Qq-cvq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkT-Ye-fJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2483" y="-263"/>
+        </scene>
+    </scenes>
+</document>
