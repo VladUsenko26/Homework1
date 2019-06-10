@@ -67,13 +67,15 @@ class ChangeColorBehavior: ViewControllerLifecycleBehavior {
     
     func afterAppearing(_ viewController: UIViewController) {
         
-        viewController.navigationController?.navigationBar.barStyle = .black
+        UIApplication.shared.statusBarStyle = .default
+        
         self.defaultColor = viewController.view.backgroundColor
         viewController.view.backgroundColor = UIColor.black
         
     }
     func beforeDisappearing(_ viewController: UIViewController) {
-        viewController.navigationController?.navigationBar.barStyle = .default
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         guard let color = self.defaultColor else {
             return
         }
