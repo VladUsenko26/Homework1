@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="1616" y="-263"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Benchmark View Controller-->
         <scene sceneID="huF-5W-zcH">
             <objects>
-                <viewController id="Hy0-PI-Xje" customClass="ProfileViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hy0-PI-Xje" customClass="BenchmarkViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DKz-rg-hpZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

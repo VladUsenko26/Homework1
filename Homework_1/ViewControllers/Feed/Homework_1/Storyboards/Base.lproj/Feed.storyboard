@@ -36,8 +36,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVZ-1i-fnC" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
-                                <rect key="frame" x="178.5" y="433" width="57" height="30"/>
-                                <state key="normal" title="Button 1">
+                                <rect key="frame" x="151" y="433" width="112" height="30"/>
+                                <state key="normal" title="Go to second vc">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -45,6 +45,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Xun-EA-5SG" kind="push" id="isG-j3-coK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9960948825" green="0.33995521070000001" blue="0.13318464159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -60,6 +63,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spP-L0-gXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2538" y="-924"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pFI-8S-fcD">
+            <objects>
+                <viewController id="Xun-EA-5SG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhM-tI-WAx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBI-zZ-JoK">
+                                <rect key="frame" x="160.5" y="433" width="93" height="30"/>
+                                <state key="normal" title="Go to third vc"/>
+                                <connections>
+                                    <segue destination="Jm2-V1-box" kind="push" id="Yub-no-NPa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yBI-zZ-JoK" firstAttribute="centerY" secondItem="qhM-tI-WAx" secondAttribute="centerY" id="BXq-UH-oWh"/>
+                            <constraint firstItem="yBI-zZ-JoK" firstAttribute="centerX" secondItem="qhM-tI-WAx" secondAttribute="centerX" id="e7U-5S-2Hv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JeO-4e-LKI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GnM-wa-GP2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlM-0j-z4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3559" y="-924"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="cDk-ti-Sjx">
+            <objects>
+                <viewController id="Jm2-V1-box" customClass="ThirdViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AtT-kH-d69">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-h3-Ag2">
+                                <rect key="frame" x="144" y="433" width="126" height="30"/>
+                                <state key="normal" title="Return to home vc"/>
+                                <connections>
+                                    <action selector="goToRootVC:" destination="Jm2-V1-box" eventType="touchUpInside" id="kkE-W3-HzL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fk5-h3-Ag2" firstAttribute="centerX" secondItem="AtT-kH-d69" secondAttribute="centerX" id="ff2-5d-ICw"/>
+                            <constraint firstItem="fk5-h3-Ag2" firstAttribute="centerY" secondItem="AtT-kH-d69" secondAttribute="centerY" id="uQi-UL-Kfa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bas-H7-4Sq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lau-6U-0Cq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYN-Kq-TL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4609" y="-924"/>
         </scene>
     </scenes>
 </document>
