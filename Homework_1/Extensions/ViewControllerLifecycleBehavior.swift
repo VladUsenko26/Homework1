@@ -41,14 +41,47 @@ extension ViewControllerLifecycleBehavior {
     func afterLayingOutSubviews(_ viewController: UIViewController) {}
 }
 
-struct HideNavigationBarBehavior: ViewControllerLifecycleBehavior {
-    func beforeAppearing(_ viewController: UIViewController) {
-        viewController.navigationController?.setNavigationBarHidden(true, animated: true)
+class TimerBehavior: ViewControllerLifecycleBehavior {
+    private var timer: Timer?
+    
+    @objc private func runTimed () {
+        print(Date())
+    }
+    
+    func afterAppearing(_ viewController: UIViewController) {
+        
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
     }
     
     func beforeDisappearing(_ viewController: UIViewController) {
-        viewController.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        guard let timer = self.timer else {
+            return
+        }
+        timer.invalidate()
     }
+}
+
+class ChangeColorBehavior: ViewControllerLifecycleBehavior {
+    private var defaultColor: UIColor?
+    
+    func afterAppearing(_ viewController: UIViewController) {
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        viewController.navigationController?.navigationBar.barStyle = .black
+        self.defaultColor = viewController.view.backgroundColor
+        viewController.view.backgroundColor = UIColor.black
+        
+    }
+    func beforeDisappearing(_ viewController: UIViewController) {
+        UIApplication.shared.statusBarStyle = .default
+        viewController.navigationController?.navigationBar.barStyle = .default
+        guard let color = self.defaultColor else {
+            return
+        }
+        viewController.view.backgroundColor = color
+    }
+    
 }
 
 

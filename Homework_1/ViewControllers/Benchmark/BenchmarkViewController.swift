@@ -11,8 +11,12 @@ import UIKit
 
 class BenchmarkViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        addBehaviors(behaviors: [TimerBehavior()])
     }
+    
 }
+
