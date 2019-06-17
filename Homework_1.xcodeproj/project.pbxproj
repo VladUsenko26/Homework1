@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F514394622B7A9430066A29E /* SessionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514394522B7A9430066A29E /* SessionSummaryViewController.swift */; };
+		F514395722B7C3850066A29E /* BenchmarkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F514395522B7C3850066A29E /* BenchmarkCollectionViewCell.xib */; };
+		F514395822B7C3850066A29E /* BenchmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514395622B7C3850066A29E /* BenchmarkCollectionViewCell.swift */; };
 		F56BF8D122A50E0900ABD7B0 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56BF8D022A50E0900ABD7B0 /* CustomView.xib */; };
 		F56BF8D322A510C400ABD7B0 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BF8D222A510C300ABD7B0 /* CustomView.swift */; };
 		F58D65C122ABC3C100552C78 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D65C022ABC3C100552C78 /* UIVIewExtension.swift */; };
@@ -16,7 +19,7 @@
 		F58D65CD22ABC4E400552C78 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58D65CB22ABC4E400552C78 /* Profile.storyboard */; };
 		F58D65D022ABC55700552C78 /* Benchmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58D65CF22ABC55700552C78 /* Benchmark.storyboard */; };
 		F58D65D622ABC69B00552C78 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58D65D422ABC69B00552C78 /* Feed.storyboard */; };
-		F5AD761422AEA3EC00B00E23 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD761322AEA3EC00B00E23 /* ThirdViewController.swift */; };
+		F5AD761422AEA3EC00B00E23 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AD761322AEA3EC00B00E23 /* FeedViewController.swift */; };
 		F5DD8845229EB72900C2B892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD8844229EB72900C2B892 /* AppDelegate.swift */; };
 		F5DD8847229EB72900C2B892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD8846229EB72900C2B892 /* ViewController.swift */; };
 		F5DD884A229EB72900C2B892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DD8848229EB72900C2B892 /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F514394522B7A9430066A29E /* SessionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryViewController.swift; sourceTree = "<group>"; };
+		F514395522B7C3850066A29E /* BenchmarkCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenchmarkCollectionViewCell.xib; sourceTree = "<group>"; };
+		F514395622B7C3850066A29E /* BenchmarkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchmarkCollectionViewCell.swift; sourceTree = "<group>"; };
 		F56BF8D022A50E0900ABD7B0 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		F56BF8D222A510C300ABD7B0 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		F58D65C022ABC3C100552C78 /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
@@ -36,7 +42,7 @@
 		F58D65CC22ABC4E400552C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Homework_1/Storyboards/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		F58D65CF22ABC55700552C78 /* Benchmark.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Benchmark.storyboard; sourceTree = "<group>"; };
 		F58D65D522ABC69B00552C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Homework_1/Storyboards/Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
-		F5AD761322AEA3EC00B00E23 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F5AD761322AEA3EC00B00E23 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F5DD8841229EB72900C2B892 /* Homework_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DD8844229EB72900C2B892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5DD8846229EB72900C2B892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F514394F22B7BD620066A29E /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F514395622B7C3850066A29E /* BenchmarkCollectionViewCell.swift */,
+				F514395522B7C3850066A29E /* BenchmarkCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		F58D65BE22ABC38500552C78 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +128,7 @@
 		F58D65D122ABC56100552C78 /* Benchmark */ = {
 			isa = PBXGroup;
 			children = (
+				F514394F22B7BD620066A29E /* CollectionViewCells */,
 				F58D65CF22ABC55700552C78 /* Benchmark.storyboard */,
 				F58D65C722ABC48100552C78 /* BenchmarkViewController.swift */,
 			);
@@ -132,7 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				F58D65D422ABC69B00552C78 /* Feed.storyboard */,
-				F5AD761322AEA3EC00B00E23 /* ThirdViewController.swift */,
+				F5AD761322AEA3EC00B00E23 /* FeedViewController.swift */,
+				F514394522B7A9430066A29E /* SessionSummaryViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -227,6 +244,7 @@
 				F58D65D622ABC69B00552C78 /* Feed.storyboard in Resources */,
 				F5DD884F229EB72E00C2B892 /* LaunchScreen.storyboard in Resources */,
 				F56BF8D122A50E0900ABD7B0 /* CustomView.xib in Resources */,
+				F514395722B7C3850066A29E /* BenchmarkCollectionViewCell.xib in Resources */,
 				F5DD884C229EB72D00C2B892 /* Assets.xcassets in Resources */,
 				F5DD885A229EFFAE00C2B892 /* SecondStory.storyboard in Resources */,
 				F5DD884A229EB72900C2B892 /* Main.storyboard in Resources */,
@@ -241,13 +259,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DD8847229EB72900C2B892 /* ViewController.swift in Sources */,
-				F5AD761422AEA3EC00B00E23 /* ThirdViewController.swift in Sources */,
+				F5AD761422AEA3EC00B00E23 /* FeedViewController.swift in Sources */,
+				F514394622B7A9430066A29E /* SessionSummaryViewController.swift in Sources */,
 				F58D65C822ABC48100552C78 /* BenchmarkViewController.swift in Sources */,
 				F56BF8D322A510C400ABD7B0 /* CustomView.swift in Sources */,
 				F5DD8845229EB72900C2B892 /* AppDelegate.swift in Sources */,
 				F58D65C322ABC3F700552C78 /* ViewControllerLifecycleBehavior.swift in Sources */,
 				F58D65C122ABC3C100552C78 /* UIVIewExtension.swift in Sources */,
 				F58D65CA22ABC4B400552C78 /* ProfileViewController.swift in Sources */,
+				F514395822B7C3850066A29E /* BenchmarkCollectionViewCell.swift in Sources */,
 				F5DD885E229F008800C2B892 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

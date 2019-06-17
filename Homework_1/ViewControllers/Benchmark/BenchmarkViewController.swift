@@ -11,12 +11,54 @@ import UIKit
 
 class BenchmarkViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
     
+    private var timerBehavior: TimerBehavior!
+    private var timerValue: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addBehaviors(behaviors: [TimerBehavior()])
+        self.collectionView.register(BenchmarkCollectionViewCell.cellNib, forCellWithReuseIdentifier: BenchmarkCollectionViewCell.id)
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.timerBehavior = TimerBehavior()
+        self.timerBehavior.delegate = self
+        addBehaviors(behaviors: [self.timerBehavior])
     }
     
+}
+
+extension BenchmarkViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BenchmarkCollectionViewCell.id, for: indexPath) as! BenchmarkCollectionViewCell
+        if let timer = timerValue {
+            cell.timerLabel_1.text = timer
+            cell.timerLabel_2.text = timer
+        }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.timerBehavior.pauseTimer()
+    }
+    
+}
+
+extension BenchmarkViewController : TimerBehaviorDelegate {
+    
+    func newTime(date: Date) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, dd MMM yyyy hh:mm:ss +zzzz"
+        let dateString = dateFormatter.string(from: date)
+        timerValue = dateString
+        collectionView.reloadData()
+    }
+    func timerInvalidated() {
+        timerValue = "Timer Invalidated"
+        collectionView.reloadData()
+    }
 }
 
