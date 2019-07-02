@@ -40,12 +40,19 @@ extension ViewControllerLifecycleBehavior {
     
     func afterLayingOutSubviews(_ viewController: UIViewController) {}
 }
+protocol TimerBehaviorDelegate {
+    func newTime (date: Date)
+    func timerInvalidated()
+}
 
 class TimerBehavior: ViewControllerLifecycleBehavior {
     private var timer: Timer?
+    private var isPaused = false
+    var delegate: TimerBehaviorDelegate?
     
     @objc private func runTimed () {
         print(Date())
+        self.delegate?.newTime(date: Date())
     }
     
     func afterAppearing(_ viewController: UIViewController) {
@@ -59,7 +66,23 @@ class TimerBehavior: ViewControllerLifecycleBehavior {
             return
         }
         timer.invalidate()
+        self.delegate?.timerInvalidated()
     }
+    
+    func pauseTimer () {
+        if isPaused{
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
+            isPaused = false
+        } else {
+            guard let timer = self.timer else {
+                return
+            }
+            timer.invalidate()
+            isPaused = true
+        }
+    }
+    
+    
 }
 
 class ChangeColorBehavior: ViewControllerLifecycleBehavior {

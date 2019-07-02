@@ -27,47 +27,52 @@
             </objects>
             <point key="canvasLocation" x="1616" y="-924"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="Rga-Iy-V5o">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-mxe-k1-tPv" id="73v-FC-s4w" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIViewController-mxe-k1-tPv" id="73v-FC-s4w" customClass="FeedViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JqS-yS-qfN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVZ-1i-fnC" customClass="CustomButton" customModule="Homework_1" customModuleProvider="target">
-                                <rect key="frame" x="151" y="433" width="112" height="30"/>
-                                <state key="normal" title="Go to second vc">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Xun-EA-5SG" kind="push" id="isG-j3-coK"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kuu-xc-Joh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellFeedTableView" id="ZqP-Gc-jb4">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZqP-Gc-jb4" id="Aiy-Aw-rjI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.9960948825" green="0.33995521070000001" blue="0.13318464159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="iVZ-1i-fnC" firstAttribute="centerY" secondItem="JqS-yS-qfN" secondAttribute="centerY" id="6qG-Hm-eXb"/>
-                            <constraint firstItem="iVZ-1i-fnC" firstAttribute="centerX" secondItem="JqS-yS-qfN" secondAttribute="centerX" id="v0Y-rs-4df"/>
+                            <constraint firstItem="Pmw-BL-wB1" firstAttribute="trailing" secondItem="Kuu-xc-Joh" secondAttribute="trailing" id="GO6-nz-STZ"/>
+                            <constraint firstItem="Kuu-xc-Joh" firstAttribute="leading" secondItem="Pmw-BL-wB1" secondAttribute="leading" id="UTc-j4-ZBf"/>
+                            <constraint firstItem="Kuu-xc-Joh" firstAttribute="top" secondItem="Pmw-BL-wB1" secondAttribute="top" id="fnW-Mv-mgh"/>
+                            <constraint firstItem="Pmw-BL-wB1" firstAttribute="bottom" secondItem="Kuu-xc-Joh" secondAttribute="bottom" id="u94-OX-xPK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pmw-BL-wB1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="A6H-fR-Frm"/>
                     <navigationItem key="navigationItem" id="zzw-s6-c9t"/>
+                    <connections>
+                        <outlet property="tableView" destination="Kuu-xc-Joh" id="kX9-em-Lvx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spP-L0-gXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2538" y="-924"/>
         </scene>
-        <!--View Controller-->
+        <!--Session Summary View Controller-->
         <scene sceneID="pFI-8S-fcD">
             <objects>
-                <viewController id="Xun-EA-5SG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SessionSummaryViewController" id="Xun-EA-5SG" customClass="SessionSummaryViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhM-tI-WAx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,9 +80,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBI-zZ-JoK">
                                 <rect key="frame" x="160.5" y="433" width="93" height="30"/>
                                 <state key="normal" title="Go to third vc"/>
-                                <connections>
-                                    <segue destination="Jm2-V1-box" kind="push" id="Yub-no-NPa"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,35 +94,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlM-0j-z4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3559" y="-924"/>
-        </scene>
-        <!--Third View Controller-->
-        <scene sceneID="cDk-ti-Sjx">
-            <objects>
-                <viewController id="Jm2-V1-box" customClass="ThirdViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AtT-kH-d69">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-h3-Ag2">
-                                <rect key="frame" x="144" y="433" width="126" height="30"/>
-                                <state key="normal" title="Return to home vc"/>
-                                <connections>
-                                    <action selector="goToRootVC:" destination="Jm2-V1-box" eventType="touchUpInside" id="kkE-W3-HzL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="fk5-h3-Ag2" firstAttribute="centerX" secondItem="AtT-kH-d69" secondAttribute="centerX" id="ff2-5d-ICw"/>
-                            <constraint firstItem="fk5-h3-Ag2" firstAttribute="centerY" secondItem="AtT-kH-d69" secondAttribute="centerY" id="uQi-UL-Kfa"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Bas-H7-4Sq"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="lau-6U-0Cq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LYN-Kq-TL2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4609" y="-924"/>
         </scene>
     </scenes>
 </document>
