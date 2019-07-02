@@ -46,15 +46,32 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8gG-0Y-ANs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="325"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LV4-n6-XdI">
+                                    <size key="itemSize" width="300" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8gG-0Y-ANs" firstAttribute="leading" secondItem="eto-83-1qV" secondAttribute="leading" id="K0a-sq-cXB"/>
+                            <constraint firstItem="8gG-0Y-ANs" firstAttribute="top" secondItem="eto-83-1qV" secondAttribute="top" id="YK5-ve-fjG"/>
                             <constraint firstItem="e9o-nJ-0XM" firstAttribute="centerY" secondItem="DKz-rg-hpZ" secondAttribute="centerY" id="dL5-vU-hgz"/>
+                            <constraint firstItem="eto-83-1qV" firstAttribute="trailing" secondItem="8gG-0Y-ANs" secondAttribute="trailing" id="fdk-Gr-wyL"/>
                             <constraint firstItem="e9o-nJ-0XM" firstAttribute="centerX" secondItem="DKz-rg-hpZ" secondAttribute="centerX" id="n1B-jX-ml7"/>
+                            <constraint firstItem="e9o-nJ-0XM" firstAttribute="top" secondItem="8gG-0Y-ANs" secondAttribute="bottom" constant="20" id="p0C-Rv-Ia0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eto-83-1qV"/>
                     </view>
                     <navigationItem key="navigationItem" id="R4r-Qq-cvq"/>
+                    <connections>
+                        <outlet property="collectionView" destination="8gG-0Y-ANs" id="Bfv-0f-9j3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkT-Ye-fJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
