@@ -10,6 +10,7 @@
 		F514394622B7A9430066A29E /* SessionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514394522B7A9430066A29E /* SessionSummaryViewController.swift */; };
 		F514395722B7C3850066A29E /* BenchmarkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F514395522B7C3850066A29E /* BenchmarkCollectionViewCell.xib */; };
 		F514395822B7C3850066A29E /* BenchmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514395622B7C3850066A29E /* BenchmarkCollectionViewCell.swift */; };
+		F519613722CB534700AD1348 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F519613622CB534600AD1348 /* PieChartView.swift */; };
 		F56BF8D122A50E0900ABD7B0 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56BF8D022A50E0900ABD7B0 /* CustomView.xib */; };
 		F56BF8D322A510C400ABD7B0 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BF8D222A510C300ABD7B0 /* CustomView.swift */; };
 		F58D65C122ABC3C100552C78 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D65C022ABC3C100552C78 /* UIVIewExtension.swift */; };
@@ -33,6 +34,7 @@
 		F514394522B7A9430066A29E /* SessionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSummaryViewController.swift; sourceTree = "<group>"; };
 		F514395522B7C3850066A29E /* BenchmarkCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenchmarkCollectionViewCell.xib; sourceTree = "<group>"; };
 		F514395622B7C3850066A29E /* BenchmarkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchmarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		F519613622CB534600AD1348 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		F56BF8D022A50E0900ABD7B0 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		F56BF8D222A510C300ABD7B0 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		F58D65C022ABC3C100552C78 /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		F58D65BE22ABC38500552C78 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F519613622CB534600AD1348 /* PieChartView.swift */,
 				F58D65C022ABC3C100552C78 /* UIVIewExtension.swift */,
 				F58D65C222ABC3F700552C78 /* ViewControllerLifecycleBehavior.swift */,
 			);
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F519613722CB534700AD1348 /* PieChartView.swift in Sources */,
 				F5DD8847229EB72900C2B892 /* ViewController.swift in Sources */,
 				F5AD761422AEA3EC00B00E23 /* FeedViewController.swift in Sources */,
 				F514394622B7A9430066A29E /* SessionSummaryViewController.swift in Sources */,
