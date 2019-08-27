@@ -10,7 +10,7 @@ import UIKit
 
 struct Segment: Equatable {
     let color: UIColor
-    let value: CGFloat
+    var value: CGFloat
     var title: String
     
     static func == (lhs: Segment, rhs: Segment) -> Bool {
@@ -32,10 +32,7 @@ class PieChartView: UIView {
         setup()
     }
     
-    init(frame: CGRect, segments: [Segment]) {
-        self.segments = segments
-        super.init(frame: frame)
-    }
+    
     
 
     required init?(coder aDecoder: NSCoder) {
@@ -47,15 +44,17 @@ class PieChartView: UIView {
         setNeedsDisplay()
     }
 
-    private func setup() {
+    func setup(segmentArr: [Segment]? = nil) {
         isOpaque = false // если переписывам drawRect нужно явно выставить прозрачность
-        if segments.isEmpty {
+        if let array = segmentArr, !array.isEmpty {
+            segments = array
+        } else {
             segments = [
-                    Segment(color: .red, value: 57, title: "Red"),
-                    Segment(color: .blue, value: 30, title: "Blue"),
-                    Segment(color: .green, value: 25, title: "Green"),
-                    Segment(color: .yellow, value: 40, title: "Yellow")
-                ]
+                Segment(color: .red, value: 57, title: "Red"),
+                Segment(color: .blue, value: 30, title: "Blue"),
+                Segment(color: .green, value: 25, title: "Green"),
+                Segment(color: .yellow, value: 40, title: "Yellow")
+            ]
         }
     }
 

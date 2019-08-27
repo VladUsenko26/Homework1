@@ -90,12 +90,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
-            timestampString = "583753125.339103"
+            timestampString = "588619983.701131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "runTimed()"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "BenchmarkCollectionViewCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
+            timestampString = "588619983.7015491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +122,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
-            timestampString = "583753125.339337"
+            timestampString = "588619983.701822"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "pauseTimer()"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Homework_1/Extensions/PieChartView.swift"
+            timestampString = "588619983.702082"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "PieChartView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
+            timestampString = "588619983.70213"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,13 +170,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
-            timestampString = "583753125.339401"
+            timestampString = "588619983.702384"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "updateChart()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
+            timestampString = "588619983.702633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
+            timestampString = "588619983.7028739"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "pauseTimer()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Homework_1.BenchmarkCollectionViewCell.pauseTimer() -&gt; ()"
+                  moduleName = "Homework_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vlad/Documents/Homeworks/Homework1/Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
+                  timestampString = "588619963.403936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "801">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSTimer) -&gt; () in Homework_1.BenchmarkCollectionViewCell.pauseTimer() -&gt; ()"
+                  moduleName = "Homework_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vlad/Documents/Homeworks/Homework1/Homework_1/ViewControllers/Benchmark/CollectionViewCells/BenchmarkCollectionViewCell.swift"
+                  timestampString = "588619963.405805"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
