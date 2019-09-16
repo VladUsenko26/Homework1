@@ -29,10 +29,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQS-kq-f0X">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="22" id="1Rh-KA-Zbh"/>
+                                                    <constraint firstAttribute="height" constant="40" id="1Rh-KA-Zbh"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap me to update pie chart" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59o-Vv-PqC">
+                                                <rect key="frame" x="0.0" y="60" width="200" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -40,8 +46,12 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="59o-Vv-PqC" firstAttribute="leading" secondItem="QsO-uz-WBQ" secondAttribute="leading" id="3FB-YZ-rqS"/>
+                                            <constraint firstItem="59o-Vv-PqC" firstAttribute="top" secondItem="GQS-kq-f0X" secondAttribute="bottom" constant="20" id="5Yi-s5-KBd"/>
+                                            <constraint firstAttribute="bottom" secondItem="59o-Vv-PqC" secondAttribute="bottom" constant="19.5" id="Ham-BO-dwX"/>
                                             <constraint firstItem="GQS-kq-f0X" firstAttribute="leading" secondItem="QsO-uz-WBQ" secondAttribute="leading" id="P6k-bk-nHe"/>
                                             <constraint firstItem="GQS-kq-f0X" firstAttribute="top" secondItem="QsO-uz-WBQ" secondAttribute="top" id="WoL-Dz-cHg"/>
+                                            <constraint firstAttribute="trailing" secondItem="59o-Vv-PqC" secondAttribute="trailing" id="fEd-YA-wal"/>
                                             <constraint firstAttribute="height" constant="100" id="lHF-gH-iYe"/>
                                             <constraint firstAttribute="trailing" secondItem="GQS-kq-f0X" secondAttribute="trailing" id="ogV-fH-BG1"/>
                                         </constraints>
